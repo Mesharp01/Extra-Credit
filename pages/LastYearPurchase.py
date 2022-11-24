@@ -73,11 +73,11 @@ with c30:
                 for season_str, iter_data in groupby(seasons, get_season):
                     if year != yearPick:
                       pass
-                
-                    data = list(iter_data)
-                    mean = sum([float(row[1]) for row in data])
-                    mean_data_entry = [season_str, mean]
-                    mean_data.append(mean_data_entry)    
+                    else:
+                        data = list(iter_data)
+                        mean = sum([float(row[1]) for row in data])
+                        mean_data_entry = [season_str, mean]
+                        mean_data.append(mean_data_entry)    
         chart_data = pd.DataFrame(mean_data,columns =['Season', 'Books Sold'])
         chart_data = chart_data.rename(columns={'Season':'index'}).set_index('index')
         st.bar_chart(chart_data["Books Sold"])
