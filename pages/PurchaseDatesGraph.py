@@ -73,4 +73,4 @@ with c30:
         chart_data = pd.DataFrame(mean_data,columns =['Season', 'Books Sold'])
         chart_data = chart_data.rename(columns={'Season':'index'}).set_index('index')
         st.bar_chart(chart_data["Books Sold"])
-        st.caption("This graph displays the total books sold in each month in the past 4 years, group by month and year.")
+        st.caption("This graph displays the total books sold in each month in the past 4 years, grouped by month and year.")
