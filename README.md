@@ -10,4 +10,5 @@ GRAPHS:
 3. Graph showing the highest rated books in the database
 
 HOW TO RUN: 
-
+Clone github repo, and use the command "python -m streamlit run BooksDatabase.py" to run the program and open the site in your browser.
+You can also view from the published link: 
