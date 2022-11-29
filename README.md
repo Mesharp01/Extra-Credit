@@ -11,4 +11,4 @@ GRAPHS:
 HOW TO RUN: 
 Clone github repo, and use the command "python -m streamlit run BooksDatabase.py" to run the program and open the site in your browser. 
 Use "python -m streamlit run BookRatingsGraph.py" to run the tool for the Book Ratings Graph
-You can also view from the published link: 
+You can also view from the published link: https://mesharp01-extra-credit-booksdatabase-mtfzdl.streamlit.app/PurchaseDatesGraph
