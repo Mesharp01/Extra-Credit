@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+from io import StringIO
 from st_aggrid import AgGrid, GridOptionsBuilder
 from st_aggrid.shared import GridUpdateMode
 
@@ -24,6 +25,7 @@ with c30:
 
     if uploaded_file is not None:
         shows = pd.read_csv(uploaded_file)
+        shows.drop(shows.columns[shows.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
 
     else:
         st.info(
