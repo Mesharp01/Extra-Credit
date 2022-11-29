@@ -59,7 +59,7 @@ with c30:
     file_container = st.expander("View .csv file")
     shows = pd.read_csv("PurchaseDates.csv")
     file_container.write(shows)
-    yearPick = st.selectbox("Choose a year",["2019", "2020", "2021", "2022"] )
+    yearPick = st.selectbox("Choose a year",[2019, 2020, 2021, 2022] )
 
 c29, c30, c31 = st.columns([1, 6, 1])
 with c30:
